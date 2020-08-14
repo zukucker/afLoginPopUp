@@ -35,8 +35,10 @@ class AfterLogin implements SubscriberInterface
             $stmnt = "SELECT groupkey FROM `s_core_customergroups` WHERE id = '".$group."'";
             $groupKey = $connection->fetchColumn($stmnt);
             $countryKey = $config['afLoginPopUpCountry'];
-            if($groupKey == $user['customergroup'] && $countryKey == $country){
-                $view->assign('afLoginPopUp', true);
+            if($groupKey && $countryKey){
+                if($groupKey == $user['customergroup'] && $countryKey == $country){
+                    $view->assign('afLoginPopUp', true);
+                }
             }
         }
     }
