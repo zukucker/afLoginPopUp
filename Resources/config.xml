@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+        <element type="combo">
+            <name>afLoginPopUpGroup</name>
+            <label lang="de">Kundengruppe:</label>
+            <label lang="en">Customer Group</label>
+            <description lang="de">Kundengruppe für welche das PopUp ausgespielt wird</description>
+            <description lang="en">The customergroup which will see the popup</description>
+            <store>Shopware.apps.Base.store.CustomerGroup</store>
+                    <options>
+                        <multiSelect>false</multiSelect>
+                    </options>
+        </element>
+        <element type="combo">
+            <name>afLoginPopUpCountry</name>
+            <label lang="de">Land:</label>
+            <label lang="en">Country:</label>
+            <description lang="de">Land für welches das PopUp ausgespielt wird</description>
+            <description lang="en">The country which will see the popup</description>
+            <store>Shopware.apps.Base.store.Country</store>
+                    <options>
+                        <multiSelect>false</multiSelect>
+                    </options>
+        </element>
+    </elements>
+
+</config>
