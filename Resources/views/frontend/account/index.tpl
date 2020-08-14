@@ -2,7 +2,6 @@
 {block name="frontend_index_javascript_async_ready"}
 {$smarty.block.parent}
 {if $afLoginPopUp}
-{debug}
 <!-- The Modal -->
 <div id="accountModal" class="modal">
 
